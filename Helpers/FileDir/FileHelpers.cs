@@ -87,21 +87,5 @@ public static class FileHelpers
 
         return strings;
     }
-    
-    public static string ConvertStringListToCSV(List<string> list, string separator =",", string quote ="\"")
-    {
-        return string.Join(separator, list.Select(x => $"{quote}{x}{quote}"));
-    }
-    
-    public static string BuildCsvDocument(List<List<string>> list, string separator = ",", string quote = "\"")
-    {
-        var csv = new StringBuilder();
-        foreach (var item in list)
-        {
-            csv.AppendLine(ConvertStringListToCSV(item, separator, quote));
-        }
-
-        return csv.ToString();
-    }
 
 }

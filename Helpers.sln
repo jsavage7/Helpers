@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{B3C196DE-3D41-48E5-88DA-D15E0799D8B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers.Tests", "Helpers.Tests\Helpers.Tests.csproj", "{FC072CF4-8ED8-44D8-9044-8F1D65CFE897}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B3C196DE-3D41-48E5-88DA-D15E0799D8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3C196DE-3D41-48E5-88DA-D15E0799D8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3C196DE-3D41-48E5-88DA-D15E0799D8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC072CF4-8ED8-44D8-9044-8F1D65CFE897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC072CF4-8ED8-44D8-9044-8F1D65CFE897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC072CF4-8ED8-44D8-9044-8F1D65CFE897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC072CF4-8ED8-44D8-9044-8F1D65CFE897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
