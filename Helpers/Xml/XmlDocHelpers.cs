@@ -118,7 +118,9 @@ public class XmlDocHelpers
     {
         try
         {
-            var result = Navigator.Evaluate(xpath);
+            XPathNodeIterator xpathIt = (XPathNodeIterator)Navigator.Evaluate(xpath);
+            var result = xpathIt.Current.Value;
+            
             return result?.ToString();
         }
         catch (Exception e)
@@ -137,8 +139,9 @@ public class XmlDocHelpers
             {
                 ns.AddNamespace(nsValues.Prefix, nsValues.Uri);
             }
+            XPathNodeIterator xpathIt = (XPathNodeIterator)Navigator.Evaluate(xpath, ns);
+            var result = xpathIt.Current.Value;
             
-            var result = Navigator.Evaluate(xpath, ns);
             return result?.ToString();
         }
         catch (Exception e)
@@ -153,7 +156,8 @@ public class XmlDocHelpers
         {
             var ns = new XmlNamespaceManager(XDoc.NameTable);
             ns.AddNamespace(prefix, uri);
-            var result = Navigator.Evaluate(xpath, ns);
+            XPathNodeIterator xpathIt = (XPathNodeIterator)Navigator.Evaluate(xpath, ns);
+            var result = xpathIt.Current.Value;
             return result?.ToString();
         }
         catch (Exception e)
