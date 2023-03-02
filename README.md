@@ -7,7 +7,7 @@ This includes:
   - Reading from files
   - Writing to a file using a list of strings
   - Checking if a file/ directory exists based on a full file path and creating it if it doesn't exist
-2. Text Helpres
+2. Text Helpers
   - Checking if text matches (Case sensitive/ not sensitive)
   - Regex Replace
   - Checking if an email is valid
